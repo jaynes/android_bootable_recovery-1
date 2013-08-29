@@ -124,7 +124,7 @@ canvas = Image.new(img_width, img_height)
 text = Draw.new
 text.gravity = WestGravity
 text.pointsize = font_point_size.to_i
-text.font = 'fonts/simsun.ttc'
+text.font = 'fonts/simhei.ttf'
 p "painting basic ascii"
 for i in 0...96
     ch = s[i, 1]
