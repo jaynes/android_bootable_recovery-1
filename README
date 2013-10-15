@@ -16,4 +16,4 @@ b、添加MTK USB挂载代码以支持MTK平台USB挂载模式
 
 }
 
-3、中文字库调用要在Device里添加"BOARD_USE_CUSTOM_RECOVERY_FONT"来调用中文字库
+3、中文字库调用要在Device里添加"BOARD_USE_CUSTOM_RECOVERY_FONT := \"chinese/font_15x24.h\""来调用中文字库
