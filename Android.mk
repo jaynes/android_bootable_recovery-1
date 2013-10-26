@@ -38,7 +38,7 @@ RECOVERY_NAME := CWM-based Recovery
 endif
 endif
 
-RECOVERY_VERSION := CWM-based Recovery 6.0.3.6
+RECOVERY_VERSION := $(RECOVERY_NAME) v6.0.3.7
 RECOVERY_WELCOME := 欢迎使用中文恢复系统
 RECOVERY_BUILD_DATE := 编译日期: $(shell date +%F)
 RECOVERY_VERSION_INFO := 技术支持：weibo.com/acexs

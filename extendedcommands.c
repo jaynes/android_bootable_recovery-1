@@ -937,13 +937,13 @@ void show_partition_menu()
             else {
                 if (!confirm_selection("format /data and /data/media (/sdcard)", confirm))
                     continue;
-                handle_data_media_format(1);
+                ignore_data_media_workaround(1);
                 ui_print("正在格式化/data...\n");
                 if (0 != format_volume("/data"))
                     ui_print("格式化/data时出错!\n");
                 else
                     ui_print("完成.\n");
-                handle_data_media_format(0);  
+                ignore_data_media_workaround(0);
             }
         }
         else if (chosen_item < mountable_volumes) {
