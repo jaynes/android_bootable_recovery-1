@@ -5,7 +5,11 @@ LOCAL_SRC_FILES := events.c resources.c
 ifneq ($(BOARD_CUSTOM_GRAPHICS),)
   LOCAL_SRC_FILES += $(BOARD_CUSTOM_GRAPHICS)
 else
-  LOCAL_SRC_FILES += chinese/graphics.c chinese/chinese.c
+ifeq ($(BOARD_REC_LANG_CHINESE),true)
+  LOCAL_SRC_FILES += graphics_cn.c chinese.c #中文调用
+else
+  LOCAL_SRC_FILES += graphics.c  #英文调用
+endif
 endif
 
 LOCAL_C_INCLUDES +=\
