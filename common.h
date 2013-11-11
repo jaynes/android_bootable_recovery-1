@@ -58,7 +58,11 @@ void ui_end_menu();
 
 int ui_get_showing_back_button();
 void ui_set_showing_back_button(int showBackButton);
-
+//彩虹模式 By Xs(weibo.com/acexs)
+int ui_get_rainbow_mode();
+void ui_rainbow_mode();
+void ui_set_rainbow_mode(int rainbowMode);
+//End
 // Set the icon (normally the only thing visible besides the progress bar).
 enum {
   BACKGROUND_ICON_NONE,
